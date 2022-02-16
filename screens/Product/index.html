@@ -51,7 +51,7 @@
     <main>
       <aside class="filterbar">
         <div class="filterbar-header">
-          <h1 class="h4 text-700">Filter</h1>
+          <h1 class="h5 text-700">Filter</h1>
           <h1 class="text-lg text-underline text-600 filter-clear">
             Clear All
           </h1>
@@ -81,15 +81,17 @@
             <ul class="filterbar-list list">
               <li>
                 <input type="checkbox" id="apple" />
-                <label for="apple" class="text-rg text-600">Hooli 360</label>
+                <label for="apple" class="text-md text-600">Hooli 360</label>
               </li>
               <li>
                 <input type="checkbox" id="samsung" />
-                <label for="samsung">Snapdragon 780</label>
+                <label for="samsung" class="text-md text-600"
+                  >Snapdragon 780</label
+                >
               </li>
               <li>
                 <input type="checkbox" id="huawei" />
-                <label for="huawei">MediaTek X</label>
+                <label for="huawei" class="text-md text-600">MediaTek X</label>
               </li>
             </ul>
           </div>
@@ -98,17 +100,21 @@
             <ul class="filterbar-list list">
               <li>
                 <input type="radio" id="4stars" />
-                <label for="4stars" class="text-rg text-600"
+                <label for="4stars" class="text-md text-600"
                   >4 stars and above</label
                 >
               </li>
               <li>
                 <input type="radio" id="3stars" />
-                <label for="3stars">3 stars and above</label>
+                <label for="3stars" class="text-md text-600"
+                  >3 stars and above</label
+                >
               </li>
               <li>
                 <input type="radio" id="2stars" />
-                <label for="2stars">2 stars and above</label>
+                <label for="2stars" class="text-md text-600"
+                  >2 stars and above</label
+                >
               </li>
             </ul>
           </div>
@@ -117,13 +123,13 @@
             <ul class="filterbar-list list">
               <li>
                 <input type="checkbox" id="fast" />
-                <label for="fast" class="text-rg text-600"
+                <label for="fast" class="text-md text-600"
                   >Fast delivery only</label
                 >
               </li>
               <li>
                 <input type="checkbox" id="out" />
-                <label for="out">Out of stocks</label>
+                <label for="out" class="text-md text-600">Out of stocks</label>
               </li>
             </ul>
           </div>
@@ -132,18 +138,336 @@
             <ul class="filterbar-list list">
               <li>
                 <input type="radio" id="low" />
-                <label for="low" class="text-rg text-600"
+                <label for="low" class="text-md text-600"
                   >Price - low to high</label
                 >
               </li>
               <li>
                 <input type="radio" id="high" />
-                <label for="high">Price - high ot low</label>
+                <label for="high" class="text-md text-600"
+                  >Price - high to low</label
+                >
               </li>
             </ul>
           </div>
         </div>
       </aside>
+
+      <aside class="filterbar-mobile">
+        <div class="filterbar-header filterbar-header-mobile">
+          <p class="h6">Filter</p>
+          <i class="fas fa-sort-down btn-icon"></i>
+        </div>
+        <div class="filterbar-body-mobile">
+          <div class="filterbar-item">
+            <h1 class="h6 text-700">Price</h1>
+            <div class="slider">
+              <div class="slider-values">
+                <span class="text-sm text-500">0</span>
+                <span class="text-sm text-500">500</span>
+                <span class="text-sm text-500">1000</span>
+              </div>
+              <input
+                type="range"
+                name="price"
+                id="price"
+                class="slider-input"
+                min="0"
+                max="1000"
+                value="0"
+              />
+            </div>
+          </div>
+          <div class="filterbar-item">
+            <h1 class="h6 text-700">Processors</h1>
+            <ul class="filterbar-list list">
+              <li>
+                <input type="checkbox" id="apple" />
+                <label for="apple" class="text-lg text-600">Hooli 360</label>
+              </li>
+              <li>
+                <input type="checkbox" id="samsung" />
+                <label for="samsung" class="text-lg text-600"
+                  >Snapdragon 780</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="huawei" />
+                <label for="huawei" class="text-lg text-600">MediaTek X</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filterbar-item">
+            <h1 class="h6 text-700">Rating</h1>
+            <ul class="filterbar-list list">
+              <li>
+                <input type="radio" id="4stars" />
+                <label for="4stars" class="text-lg text-600"
+                  >4 stars and above</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="3stars" />
+                <label for="3stars" class="text-lg text-600"
+                  >3 stars and above</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="2stars" />
+                <label for="2stars" class="text-lg text-600"
+                  >2 stars and above</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="filterbar-item">
+            <h1 class="h6 text-700">Include</h1>
+            <ul class="filterbar-list list">
+              <li>
+                <input type="checkbox" id="fast" />
+                <label for="fast" class="text-lg text-600"
+                  >Fast delivery only</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="out" />
+                <label for="out" class="text-lg text-600">Out of stocks</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filterbar-item">
+            <h1 class="h6 text-700">Sort by</h1>
+            <ul class="filterbar-list list">
+              <li>
+                <input type="radio" id="low" />
+                <label for="low" class="text-lg text-600"
+                  >Price - low to high</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="high" />
+                <label for="high" class="text-lg text-600"
+                  >Price - high to low</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <article class="product-list-wrapper padding-default flex-1">
+        <section class="product-list-header">
+          <h1 class="text-lg">Showing all models</h1>
+          <h1 class="text-md text-600 filter-clear">( showing 20 products)</h1>
+        </section>
+        <section class="product-list">
+          <div class="card card-shadow">
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/classX.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">Hooli classX</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">The best camera in the industry</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/iphone11.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli 11</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Practically magic</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/iphone11white.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli X</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Classic edition</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/coderspecial.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli code</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Gilfoyle edition</p>
+                <p class="text-rg">
+                  $1079
+                  <span class="text-line-through text-tertiary">$1199</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/iceblue.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli ice</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Make the world stare</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/skyblue.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli sky</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Make the world stare</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
     <footer class="footer">
       <div class="footer-container">
@@ -220,5 +544,7 @@
         <p class="text-md text-tertiary">Open source under the MIT License.</p>
       </div>
     </footer>
+    <script src="../../app.js"></script>
+    <script src="./filterbar.js"></script>
   </body>
 </html>
