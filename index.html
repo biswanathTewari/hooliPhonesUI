@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./screens/Cart/styles.css" />
+    <link rel="stylesheet" href="./screens/Wishlist/styles.css" />
     <link rel="icon" href="./assets/favicon/hooli.ico" type="image/x-icon" />
-    <title>phones</title>
+    <title>wishlist</title>
   </head>
   <body>
     <nav class="navbar">
@@ -45,147 +45,219 @@
       </div>
     </nav>
     <main class="main">
-      <h1 class="h5 text-700 my-2">My Cart</h1>
-      <article class="article">
-        <section class="product-section">
-          <div class="card card-horizontal card-shadow">
+      <article class="product-list-wrapper padding-default flex-1">
+        <section class="product-list-header">
+          <h1 class="h5 text-700">My Wishlist</h1>
+        </section>
+        <section class="product-list">
+          <div class="card card-shadow">
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/classX.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">Hooli classX</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">The best camera in the industry</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/iphone11.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli 11</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Practically magic</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
+            <div class="zoom-wrapper">
+              <img
+                src="../../assets/images/iphone11white.jpeg"
+                alt="item"
+                loading="lazy"
+                class="img-responsive card-img zoom"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">
+                <p class="h6 text-600">hooli X</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-md">Classic edition</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
             <div class="zoom-wrapper">
               <img
                 src="../../assets/images/coderspecial.jpeg"
                 alt="item"
                 loading="lazy"
-                class="img-responsive card-img-horizontal zoom"
+                class="img-responsive card-img zoom"
               />
             </div>
 
-            <div class="card-info-horizontal">
+            <div class="card-info">
               <div class="card-title">
                 <p class="h6 text-600">hooli code</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
               </div>
               <div class="card-subtitle">
                 <p class="text-md">Gilfoyle edition</p>
-                <div class="flex-row flex-wrap">
-                  <p class="text-rg mg-r-1">
-                    $799
-                    <span class="text-line-through text-tertiary">$999</span>
-                    <span class="text-secondary">10%</span>
-                  </p>
-                  <div class="quantity">
-                    <div class="btn-circle">-</div>
-                    <input type="text" value="1" />
-                    <div class="btn-circle">+</div>
-                  </div>
-                </div>
+                <p class="text-rg">
+                  $1079
+                  <span class="text-line-through text-tertiary">$1199</span>
+                  <span class="text-secondary">10%</span>
+                </p>
               </div>
               <div class="card-btns">
-                <a href="#" class="btn btn-primary mg-right1">wishlist</a>
-                <a href="#" class="btn btn-secondary">remove</a>
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
               </div>
             </div>
           </div>
 
-          <div class="card card-horizontal card-shadow">
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
             <div class="zoom-wrapper">
               <img
-                src="./assets/images/iphone11.jpeg"
+                src="../../assets/images/iceblue.jpeg"
                 alt="item"
                 loading="lazy"
-                class="img-responsive card-img-horizontal zoom"
+                class="img-responsive card-img zoom"
               />
             </div>
 
-            <div class="card-info-horizontal">
+            <div class="card-info">
               <div class="card-title">
-                <p class="h6 text-600">hooli 11</p>
+                <p class="h6 text-600">hooli ice</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
               </div>
               <div class="card-subtitle">
-                <p class="text-md">settle for less</p>
-                <div class="flex-row flex-wrap">
-                  <p class="text-rg mg-r-1">
-                    $799
-                    <span class="text-line-through text-tertiary">$999</span>
-                    <span class="text-secondary">10%</span>
-                  </p>
-                  <div class="quantity">
-                    <div class="btn-circle">-</div>
-                    <input type="text" value="1" />
-                    <div class="btn-circle">+</div>
-                  </div>
-                </div>
+                <p class="text-md">Make the world stare</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
               </div>
               <div class="card-btns">
-                <a href="#" class="btn btn-primary mg-right1">wishlist</a>
-                <a href="#" class="btn btn-secondary">remove</a>
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
               </div>
             </div>
           </div>
 
-          <div class="card card-horizontal card-shadow">
+          <div class="card card-shadow">
+            <div class="card-badge">
+              <p class="text-sm">Sale</p>
+            </div>
             <div class="zoom-wrapper">
               <img
-                src="./assets/images/classX.jpeg"
+                src="../../assets/images/skyblue.jpeg"
                 alt="item"
                 loading="lazy"
-                class="img-responsive card-img-horizontal zoom"
+                class="img-responsive card-img zoom"
               />
             </div>
 
-            <div class="card-info-horizontal">
+            <div class="card-info">
               <div class="card-title">
-                <p class="h6 text-600">hooli X</p>
+                <p class="h6 text-600">hooli sky</p>
+                <a href="#" class="btn-icon btn-icon-sm"
+                  ><i class="fas fa-heart"></i
+                ></a>
               </div>
               <div class="card-subtitle">
-                <p class="text-md">best camera ever</p>
-                <div class="flex-row flex-wrap">
-                  <p class="text-rg mg-r-1">
-                    $799
-                    <span class="text-line-through text-tertiary">$999</span>
-                    <span class="text-secondary">10%</span>
-                  </p>
-                  <div class="quantity">
-                    <div class="btn-circle">-</div>
-                    <input type="text" value="1" />
-                    <div class="btn-circle">+</div>
-                  </div>
-                </div>
+                <p class="text-md">Make the world stare</p>
+                <p class="text-rg">
+                  $899
+                  <span class="text-line-through text-tertiary">$999</span>
+                  <span class="text-secondary">10%</span>
+                </p>
               </div>
               <div class="card-btns">
-                <a href="#" class="btn btn-primary mg-right1">wishlist</a>
-                <a href="#" class="btn btn-secondary">remove</a>
+                <a href="#" class="btn btn-primary mg-right1">Add to cart</a>
+                <a href="#" class="btn btn-secondary">Buy now</a>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section class="bill-section">
-          <div class="bill card-shadow">
-            <h5 class="h5">Price details</h5>
-            <div class="line"></div>
-            <div class="bill-item">
-              <h6 class="text-rg">Price(2 items)</h6>
-              <p class="text-md">$799</p>
-            </div>
-            <div class="bill-item">
-              <h6 class="text-rg">Discount</h6>
-              <p class="text-md">- $100</p>
-            </div>
-            <div class="bill-item">
-              <h6 class="text-rg">Delivery Charges</h6>
-              <p class="text-md">$200</p>
-            </div>
-            <div class="line"></div>
-            <div class="bill-item">
-              <h6 class="text-lg text-700">Total</h6>
-              <h6 class="text-lg text-700">$899</h6>
-            </div>
-            <div class="line"></div>
-            <p class="text-md">You will save $100 on this order</p>
-            <div class="btn btn-primary mt-2">Place order</div>
           </div>
         </section>
       </article>
     </main>
-
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-info">
@@ -261,6 +333,6 @@
         <p class="text-md text-tertiary">Open source under the MIT License.</p>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="../../app.js"></script>
   </body>
 </html>
